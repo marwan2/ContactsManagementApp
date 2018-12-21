@@ -28,7 +28,7 @@
                 </ul>
             @endif
 
-            {!! Form::open(['url' => 'contacts', 'class' => 'form-horizontal']) !!}
+            {!! Form::open(['url' => 'contacts', 'class' => 'form-horizontal', 'id'=>'contactsForm']) !!}
             @include ('contacts.form')
             {!! Form::close() !!}
         </div>

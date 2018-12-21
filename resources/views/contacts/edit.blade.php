@@ -32,6 +32,7 @@
                 'method' => 'PATCH',
                 'url' => ['contacts', $contact->id],
                 'class' => 'form-horizontal',
+                'id'=>'contactsForm',
             ]) !!}
             @include ('contacts.form', ['submitButtonText' => 'Save Changes'])
             {!! Form::close() !!}
