@@ -10,4 +10,7 @@ Route::group(['prefix'=>'/', 'namespace'=>'Backend', 'middleware'=>'auth'], func
 	Route::resource('contacts', 'ContactsController');
 });
 
+Route::get('testing', function() {
+	return 'Start test';
+});
 Route::get('/home', 'HomeController@index')->name('home');
